@@ -86,9 +86,13 @@ source /your_path_to_workspace/devel/setup.bash
 
 # 测试
 1. 启动仿真环境
-~~~
+```bash
 roslaunch zima_gazebo gazebo.launch
-~~~
+
+# 加载可能比较慢，可以尝试离线启动（但似乎也还是很慢）
+roslaunch zima_gazebo gazebo.launch verbose:=true
+
+```
 
 <div align="center">
   <img src="Figs/2025-03-11 10-44-22 的屏幕截图.png" width="60%" />
@@ -111,6 +115,7 @@ roslaunch zima_ros gazebo_demo.launch
 </figcaption>
 </div>
 
+按键操作：
 * a 是自动清洁
 * s 是自动扫描房间
 * q 是退出
@@ -120,4 +125,20 @@ roslaunch zima_ros gazebo_demo.launch
 roslaunch zima_ros rviz.launch
 ~~~
 
-测试效果请见视频
+`rqt_graph`如下图所示
+
+<div align="center">
+  <img src="Figs/2025-03-11 11-27-48 的屏幕截图.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+如下图所示，会标记出机器人运动的轨迹以及已经清洁的区域，不过对于机器人规划的路径感觉有进一步优化的空间～
+
+<div align="center">
+  <img src="Figs/2025-03-11 13-03-21 的屏幕截图.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+测试效果请见视频：

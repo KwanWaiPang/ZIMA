@@ -117,7 +117,7 @@ int main(int argc, char **argv) {
   google::InitGoogleLogging(argv[0]);
   google::InstallFailureSignalHandler();
   google::ParseCommandLineFlags(&argc, &argv, true);
-  FLAGS_debug_enable = false;
+  FLAGS_debug_enable = true; //false;
   FLAGS_use_simple_slam = true;
   FLAGS_run_with_half_scan = false;
 

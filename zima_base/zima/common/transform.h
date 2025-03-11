@@ -98,10 +98,14 @@ class TransformManager {
   bool GetTransform(const std::string& target_frame,
                     const std::string& source_frame, Transform& out) const;
 
-  const std::string kWorldFrame_ = "/world";
-  const std::string kOdomFrame_ = "/odom";
-  const std::string kRobotFrame_ = "/robot";
-  const std::string kLidarFrame_ = "/lidar";
+  // const std::string kWorldFrame_ = "/world";
+  // const std::string kOdomFrame_ = "/odom";
+  // const std::string kRobotFrame_ = "/robot";
+  // const std::string kLidarFrame_ = "/lidar";
+  const std::string kWorldFrame_ = "world";
+  const std::string kOdomFrame_ = "odom";
+  const std::string kRobotFrame_ = "robot";
+  const std::string kLidarFrame_ = "lidar";
 
  private:
   ReadWriteLock::SPtr access_;

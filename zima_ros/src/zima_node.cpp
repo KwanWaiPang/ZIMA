@@ -737,7 +737,7 @@ void ZimaNode::PublishScan() {
 void ZimaNode::PublishSlamValueMap(const ros::Time &time,
                                    SlamValueGridMap2D::SPtr map) {
   slam_value_map_publisher_.publish(zima_ros::SlamValueGridMapToOccupancyGrid(
-      TransformManager::Instance()->kWorldFrame_, time, map));
+      TransformManager::Instance()->kWorldFrame_, time, map));//发布slam地图
 }
 
 void ZimaNode::PublishPointCloudInChassisFrame(
