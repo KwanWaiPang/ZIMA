@@ -6,7 +6,7 @@
 [comment]: <> ( <h2 align="center">PAPER</h2>)
   <h3 align="center">
   <a href="https://github.com/BitSoulLab/ZIMA" target="_blank">Original Github Page</a>
-  | <a href="" target="_blank">Blog</a>
+  | <a href="https://kwanwaipang.github.io/sweep-robot/" target="_blank">Blog</a>
   </h3>
   <div align="center"></div>
 
