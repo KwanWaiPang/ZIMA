@@ -85,6 +85,9 @@ source /your_path_to_workspace/devel/setup.bash
 
 
 # 测试
+
+测试用的代码及代码解读请见：[Link](https://github.com/KwanWaiPang/ZIMA)
+
 1. 启动仿真环境
 ```bash
 roslaunch zima_gazebo gazebo.launch
@@ -133,7 +136,7 @@ roslaunch zima_ros rviz.launch
 </figcaption>
 </div>
 
-如下图所示，会标记出机器人运动的轨迹以及已经清洁的区域，不过对于机器人规划的路径感觉有进一步优化的空间～
+如下图所示，会标记出机器人运动的轨迹以及已经清洁的区域，不过对于机器人规划的路径感觉有进一步优化的空间，有些区域不知为何空着先不处理留到后续才清洁，这会导致额外的多余任务
 
 <div align="center">
   <img src="Figs/2025-03-11 13-03-21 的屏幕截图.png" width="60%" />
@@ -142,3 +145,26 @@ roslaunch zima_ros rviz.launch
 </div>
 
 测试效果请见视频：
+
+<div align="center" style="
+  position: relative; 
+  width: 80%; 
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background: url('https://kwanwaipang.github.io/File/Representative_works/loading-icon.gif') center/contain no-repeat;
+  ">
+  <iframe width="100%" height="100%"
+    src="//player.bilibili.com/player.html?isOutside=true&aid=114142061004880&bvid=BV1KMRHYJE6N&cid=28806481727&p=1&autoplay=0" 
+    title="Bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  style="opacity: 0; transition: opacity 0.5s; border-radius: 15px;" onload="this.style.opacity='1'"
+  ></iframe>
+</div>
+
+
+时间太长了，因此视频没有全部录制，最终跑了一个多小时才完成整个空间的清洁任务
+
+<div align="center">
+  <img src="Figs/2025-03-11 13-28-09 的屏幕截图.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
