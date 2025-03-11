@@ -2,3 +2,5 @@
 # build
 # *.pb.h
 # *.pb.cc
+
+build_dir

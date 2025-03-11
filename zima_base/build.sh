@@ -7,11 +7,13 @@ ZIMA_PACKAGE_UP="BASE"
 PROJECT_DIR=$(pwd)
 GIT_HASH_FILE=${PROJECT_DIR}/zima/zima_${ZIMA_PACKAGE}_version_hash.h
 
-function help() {
+# function help() {
+help() {
   echo "Usage: Place this script under project root dir and run with './build.sh build_dir'"
 }
 
-function get_git_hash_header() {
+# function get_git_hash_header() {
+get_git_hash_header() {
   rm ${GIT_HASH_FILE}
   GIT_HASH=$(git log -1 --pretty=format:%H)
   echo "Git hash: ${GIT_HASH}"

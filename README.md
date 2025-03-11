@@ -13,6 +13,7 @@
 <!-- rm -rf .git -->
 
 # 配置
+
 原本的配置四采用Docker镜像的
 ```bash
 docker pull bitsoullab/ros:zima-dev
@@ -54,6 +55,47 @@ fi
 ```
 
 此处先不用docker，先进行编译安装
-1. 在zima_base目录下，运行`sh build.sh`
-2. 在zima_core目录下，运行`sh build.sh`
-3. 新建一个ros workspace，导入zima_gazebo/zima_ros。并使用catkin_make编译。
+1. 在zima_base目录下，运行`bash build.sh build_dir`
+2. 在zima_core目录下，运行`bash build.sh build_dir`
+
+<div align="center">
+  <img src="./Figs/2025-03-11 10-30-38 的屏幕截图.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+3. 新建一个ros workspace，然后使用catkin_make编译。
+
+<div align="center">
+  <img src="Figs/2025-03-11 10-33-39 的屏幕截图.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+运行前先确保已经source了工作空间
+```bash
+source /your_path_to_workspace/devel/setup.bash
+```
+
+<div align="center">
+  <img src="Figs/2025-03-11 10-34-52 的屏幕截图.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+
+# 测试
+1. 启动仿真环境
+~~~
+roslaunch zima_gazebo gazebo.launch
+~~~
+
+2. 启动demo
+~~~
+roslaunch zima_ros gazebo_demo.launch
+~~~
+
+3. 启动rviz
+~~~
+roslaunch zima_ros rviz.launch
+~~~
