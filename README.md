@@ -101,7 +101,23 @@ roslaunch zima_gazebo gazebo.launch
 roslaunch zima_ros gazebo_demo.launch
 ~~~
 
+若遇到报错 `Open: Open /tmp/zima_config.json failed.`，那么就在zima_base/json_config中复制一份zima_dev_gazebo_config.json到/tmp/zima_config.json。
+
+<div align="center">
+  <img src="Figs/2025-03-11 10-47-54 的屏幕截图.png" width="60%" />
+  <img src="Figs/2025-03-11 10-50-04 的屏幕截图.png" width="60%" />
+<figcaption> 
+注意要重命名为zima_config.json 
+</figcaption>
+</div>
+
+* a 是自动清洁
+* s 是自动扫描房间
+* q 是退出
+
 3. 启动rviz
 ~~~
 roslaunch zima_ros rviz.launch
 ~~~
+
+测试效果请见视频
