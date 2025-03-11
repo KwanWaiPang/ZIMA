@@ -90,6 +90,12 @@ source /your_path_to_workspace/devel/setup.bash
 roslaunch zima_gazebo gazebo.launch
 ~~~
 
+<div align="center">
+  <img src="Figs/2025-03-11 10-44-22 的屏幕截图.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
 2. 启动demo
 ~~~
 roslaunch zima_ros gazebo_demo.launch
